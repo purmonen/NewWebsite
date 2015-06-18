@@ -7,17 +7,18 @@ body, html {
 header {
   margin: 0px;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: no-repeat center center;
   background-attachment: fixed;
   background-image: url('img/new-york-city-336475_1920.jpg');
+  
   background-repeat: no-repeat;
 }
 
 .header-overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .logo-part {
@@ -36,9 +37,7 @@ header {
 }
 
 .header-boxes {
-  position:relative;
-  top: 10%;
-  margin-top: 0px;
+  margin-top: 5%;
   height: 100%;
 }
 
@@ -77,16 +76,19 @@ section {
   box-sizing: border-box;
   padding: 20px 20px;
   background-color: rgba(0, 0, 0, 0.6);
-  width: @header-box-width;
-  height: 250px;
-  float:left;
-  position: relative;
-  margin: 0px (100-@header-box-width*3) / 6;
+  //width: @header-box-width;
+  height: 260px;
+  min-width: 320px;
+  max-width: 400px;
+  margin: auto;
+  //float:left;
+  //position: relative;
+  //margin: 0px (100-@header-box-width*3) / 6;
   
 }
 
 .header-box h3 {
-  font-size: 33px;
+  font-size: 30px;
   margin: 0;
   font-weight: 300;
 }
@@ -100,10 +102,11 @@ section {
   font-weight: 100;
 }
 
-@header-icon-width: 25%;
+
+@header-icon-height: 80px;
 .header-icon {
 	text-align: center;
-	width: @header-icon-width;
+	width: @header-icon-height;
 	margin: 0%;
   margin-right: 20px;
 	height: 100%;
@@ -111,46 +114,33 @@ section {
 }
 
 @red: #EF4035;
-
-@header-icon-height: 80px;
 .header-icon-background {
   background-color: @red;
   width: @header-icon-height;
   height: @header-icon-height;
   margin: 0 auto;
   //padding: 10px;
-	border-radius: 50%; 
-}
-
-.header-icon i {
+	border-radius: 50%;
   font-size: 50px;
-  line-height: @header-icon-height;
+  line-height: @header-icon-height; 
 }
-
-
 
 .logo {
   color: white;
-  font-size: 150px;
+  font-size: 120px;
   text-transform: uppercase;
   text-align: right;
-  
   font-weight: 900;
-  font-weight: 600;
 }
 
 .sub-logo {
   color: white;
   font-size: 40px;
   text-align: right;
-  position: relative;
-  top: -0px;
-  
-  font-weight: 200;
+  font-weight: 100;
 }
 
 hr {
-//max-width: 200px;
 margin: 20px auto;
 height: 1px;
 box-sizing: content-box;
