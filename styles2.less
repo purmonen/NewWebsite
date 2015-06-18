@@ -1,0 +1,36 @@
+header {
+	width: 70%;
+	height: 400px;
+	background-color: green;
+	margin: 10px;
+}
+
+body {
+	font-family: helvetica;
+}
+
+
+
+.box {
+	background-color: yellow;
+	height:50px;
+}
+
+@media screen and (min-width: 800px) {
+	
+	@boxWidth: 10%;
+	@numberOfBoxes: 4;
+	@boxMargin: (100-@boxWidth*@numberOfBoxes)/(@numberOfBoxes+1);
+	.box {
+		width: @boxWidth;
+		height:100px;
+		margin-right: @boxMargin;
+		box-sizing: border-box;
+		padding: 20px;
+		float: left;
+	}
+	
+	.box-first {
+		margin: auto @boxMargin; 
+	}
+}
