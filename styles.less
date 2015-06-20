@@ -9,17 +9,47 @@ header {
   width: 100%;
   height: 100%;
   background-color: black;
+}
 
+.logo {
+  color: white;
+  font-size: 120px;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 900;
+}
+
+.sub-logo {
+  color: white;
+  font-size: 40px;
+  text-align: right;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 1300px) {
+  .logo {
+    font-size: 90px;
+  }
+  .sub-logo {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+header {
+  height: 115%;
+  }
+  .logo {
+    font-size: 60px;
+  }
+  .sub-logo {
+    font-size: 25px;
+  }
 }
 
 .header-overlay {
-  background: no-repeat center;
-  background-attachment: fixed;
-  background-image: url('img/new-york-city-336475_1920.jpg');
-  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-
 }
 
 
@@ -58,6 +88,7 @@ header {
 
 img {
   margin-bottom: 50px;
+  max-width: 100%;
 }
 
 .gray-background {
@@ -73,6 +104,13 @@ h1,h2,h3,h4,h5,h6,p {
   text-transform: uppercase;
   font-weight: 600;
 }
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 35px;
+  }
+}
+
 
 section hr {
   max-width: 200px;
@@ -101,6 +139,14 @@ section {
 }
 
 @media screen and (min-width: 992px) {
+
+  .header-overlay {
+  background: no-repeat center;
+  background-attachment: fixed;
+  background-image: url('img/new-york-city-336475_1920.jpg');
+  background-repeat: no-repeat;
+  }
+
   .header-box {
     box-sizing: border-box;
     height: @header-box-height;
@@ -114,11 +160,7 @@ section {
   }
 }
 
-@media screen and (max-width: 991px) {
-  header {
-    height: 120%;
-  }
-}
+
 
 
 
@@ -160,29 +202,7 @@ section {
   line-height: @header-icon-height; 
 }
 
-.logo {
-  color: white;
-  font-size: 120px;
-  text-transform: uppercase;
-  text-align: right;
-  font-weight: 900;
-}
 
-.sub-logo {
-  color: white;
-  font-size: 40px;
-  text-align: right;
-  font-weight: 100;
-}
-
-@media screen and (max-width: 1300px) {
-  .logo {
-    font-size: 90px;
-  }
-  .sub-logo {
-    font-size: 30px;
-  }
-}
 
 
 hr {
