@@ -1,0 +1,160 @@
+body,
+html {
+  margin: 0px;
+  height: 100%;
+  font-family: "helvetica", "arial";
+}
+header {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.header-overlay {
+  background: no-repeat center;
+  background-attachment: fixed;
+  background-image: url('img/new-york-city-336475_1920.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.header-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 5%;
+  padding-top: 3%;
+  height: 100%;
+  position: relative;
+}
+.header-boxes {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  right: 5%;
+}
+.logo-part {
+  color: #ef4035;
+}
+.logo-container {
+  font-family: "helvetica neue";
+}
+.logo-container hr {
+  width: 300px;
+}
+img {
+  margin-bottom: 50px;
+}
+.gray-background {
+  background-color: #f5f5f5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h2 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+section hr {
+  max-width: 200px;
+}
+section p {
+  font-size: 20px;
+  text-align: left;
+  margin: 20px 0;
+  font-weight: 300;
+}
+section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.header-box {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  margin: 20px auto;
+}
+@media screen and (min-width: 992px) {
+  .header-box {
+    box-sizing: border-box;
+    height: 240px;
+    width: 31%;
+    margin: auto 0;
+    float: left;
+  }
+  .header-box-margin {
+    margin: auto 3.5%;
+  }
+}
+@media screen and (max-width: 991px) {
+  header {
+    height: 120%;
+  }
+}
+.header-box h3 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 300;
+}
+.header-box p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 100;
+}
+.header-icon {
+  text-align: center;
+  width: 60px;
+  margin: 0%;
+  margin-right: 15px;
+  height: 100%;
+  float: left;
+}
+.header-icon-background {
+  background-color: #ef4035;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 35px;
+  line-height: 60px;
+}
+.logo {
+  color: white;
+  font-size: 120px;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 900;
+}
+.sub-logo {
+  color: white;
+  font-size: 40px;
+  text-align: right;
+  font-weight: 100;
+}
+@media screen and (max-width: 1300px) {
+  .logo {
+    font-size: 90px;
+  }
+  .sub-logo {
+    font-size: 30px;
+  }
+}
+hr {
+  margin: 15px auto;
+  height: 1px;
+  box-sizing: content-box;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 0;
+  border-right: 0;
+}
+hr.colored {
+  border-color: #ef4035;
+}
