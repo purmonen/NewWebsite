@@ -10,6 +10,38 @@ header {
   height: 100%;
   background-color: black;
 }
+.logo {
+  color: white;
+  font-size: 120px;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 900;
+}
+.sub-logo {
+  color: white;
+  font-size: 40px;
+  text-align: right;
+  font-weight: 100;
+}
+@media screen and (max-width: 1300px) {
+  .logo {
+    font-size: 90px;
+  }
+  .sub-logo {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  header {
+    height: 125%;
+  }
+  .logo {
+    font-size: 50px;
+  }
+  .sub-logo {
+    font-size: 20px;
+  }
+}
 .header-overlay {
   height: 100%;
   width: 100%;
@@ -57,6 +89,11 @@ h2 {
   font-size: 70px;
   text-transform: uppercase;
   font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 35px;
+  }
 }
 section hr {
   max-width: 200px;
@@ -122,27 +159,6 @@ section {
   border-radius: 50%;
   font-size: 35px;
   line-height: 60px;
-}
-.logo {
-  color: white;
-  font-size: 120px;
-  text-transform: uppercase;
-  text-align: right;
-  font-weight: 900;
-}
-.sub-logo {
-  color: white;
-  font-size: 40px;
-  text-align: right;
-  font-weight: 100;
-}
-@media screen and (max-width: 1300px) {
-  .logo {
-    font-size: 90px;
-  }
-  .sub-logo {
-    font-size: 30px;
-  }
 }
 hr {
   margin: 15px auto;
