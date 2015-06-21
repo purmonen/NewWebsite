@@ -118,7 +118,7 @@ section {
   .header-overlay {
     background: no-repeat center;
     background-attachment: fixed;
-    background-image: url('img/new-york-city-336475_1920.jpg');
+    
     background-repeat: no-repeat;
   }
   .header-box {
