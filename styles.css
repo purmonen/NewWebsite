@@ -65,7 +65,7 @@ header {
   color: #ef4035;
 }
 .logo-container {
-  font-family: "helvetica neue";
+  font-family: "helvetica neue", "helvetica", "arial";
 }
 .logo-container hr {
   width: 300px;
