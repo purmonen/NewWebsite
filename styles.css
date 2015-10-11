@@ -93,6 +93,12 @@ h2 {
   text-transform: uppercase;
   font-weight: 600;
 }
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 600px) {
   h2 {
     font-size: 35px;
@@ -142,7 +148,7 @@ section {
 }
 .header-box p {
   color: #fff;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 25px;
   font-weight: 100;
 }
